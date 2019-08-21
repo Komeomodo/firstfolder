@@ -34,7 +34,7 @@
 			<div class="col-sm-5 col-sm-offset-1">
 			<div class="form-group">
 				<label>Income:</label>
-					<input type="text" class="form-control" name="gender" id="Income" required="required" style="width:100px;text-align:right;">
+					<input type="text" class="form-control" name="in_come" id="Income" required="required" style="width:100px;text-align:right;">
 			</div>
 			<div class="form-group">
 				<label>Name:</label>
@@ -46,15 +46,32 @@
 			</div>
 			<div class="form-group">
 				<label>Gender:</label>
-					<input type="text" class="form-control" name="gender" id="gen_er" required="required">
+					<select class="form-control" name="gender" id="gen_er" required="required">
+						<option value="gen">...</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+					</select>
 			</div>
 			<div class="form-group">
-				<label>Marital Status:</label><br>
-					<input type="text"class="form-control" name="status" id="stat_s" required="required">
+				<label>Marital Status:</label>
+					<select class="form-control" name="status" id="stat_s" required="required">
+						<option value="marital">...</option>
+						<option value="single">Single</option>
+						<option value="married">Married</option>
+						<option value="divorced">Divorced</option>
+					</select>					
 			</div>
 			<div class="form-group">
 				<label>Number of dependents:</label><br>
-					<input type="text" class="form-control" name="dependents" id="dependent" required="required"><br><br>
+					<select class="form-control" name="dependents" id="dependent" required="required">>
+						<option value="on">...</option>
+						<option value="one">1</option>
+						<option value="two">2</option>
+						<option value="three">3</option>
+						<option value="four">4</option>
+						<option value="five">5</option>
+						<option value="other">others</option>
+					</select>
 			</div>
 			<div class="form-group">
 				<input type="button" class="form-control btn btn-primary btn-sm" value="Submit" onclick="compute();">
